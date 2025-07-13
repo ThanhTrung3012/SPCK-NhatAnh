@@ -1,0 +1,146 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f2f4f8;
+  margin: 0;
+  padding: 40px 20px;
+  color: #2c3e50;
+}
+
+.title-cart {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 40px auto 20px;
+  max-width: 900px;
+  color: #1e272e;
+}
+
+#cart-table {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  font-size: 15px;
+}
+
+#cart-table thead {
+  display: none;
+}
+
+#cart-table tr {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+#cart-table td {
+  padding: 16px;
+  border: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+#cart-table td:first-child {
+  flex: 2;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+#cart-table td:first-child::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url('/img/default-product.jpg') center/cover no-repeat;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+
+#cart-table td:nth-child(2),
+#cart-table td:nth-child(3),
+#cart-table td:nth-child(4) {
+  justify-content: center;
+  font-weight: 500;
+  color: #2f3542;
+}
+
+#cart-table td:last-child {
+  justify-content: center;
+}
+
+#cart-table td:last-child button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #ff4d4f;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#cart-table td:last-child button:hover {
+  color: #e84118;
+  transform: scale(1.2);
+}
+
+.footer-cart {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 24px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-cart strong {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f3542;
+}
+
+.footer-cart button {
+  background: linear-gradient(135deg, #ff4d4f, #ff6b81);
+  color: white;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-cart button:hover {
+  background: linear-gradient(135deg, #e84118, #ff4757);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  #cart-table tr {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  #cart-table td {
+    justify-content: flex-start;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .footer-cart {
+    flex-direction: column;
+    text-align: center;
+  }
+}

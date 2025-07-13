@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/firebase.js" defer type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Đăng nhập vào ChillBeat</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="#">Thông tin người dùng</a>
+            <a href="rcm">Giới thiệu</a>
+            <a href="#">Kết nối</a>
+            <a href="#">Trợ giúp</a>
+        </nav>
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="sign-up_form">
+                <h1>Đăng Kí</h1>
+                <div class="social-icons">
+                    <button type="button" class="icon google-btn">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </button>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc sử dụng email để tiếp tục</span>
+                <input type="email" placeholder="Email" id="signup-email" />
+                <input type="password" placeholder="Password" id="signup-password" />
+                <input type="password" placeholder="Confirm Password" id="cfpassword" />
+                <button type="submit">Đăng Kí</button>
+                <p>Bạn đã có tài khoản? <a href="#" id="switch-to-signin">Đăng Nhập Ngay</a></p>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form id="sign-in_form">
+                <h2>Đăng Nhập</h2>
+                <div class="social-icons">
+                    <button type="button" class="icon google-btn" id="gg-signup-btn">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </button>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email" id="signin-email" required />
+                <input type="password" placeholder="Password" id="signin-password" required />
+                <a href="#">Bạn quên mật khẩu?</a>
+                <button type="submit">Đăng Nhập</button>
+                <p>Bạn chưa có tài khoản? <a href="#" id="switch-to-signup">Đăng Kí Ngay</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="/js/change.js"></script>
+    <script src="/js/signup.js"></script>
+    <script src="/js/signin.js"></script>
+    <script>
+        const container = document.getElementById('container');
+        const switchToSignup = document.getElementById('switch-to-signup');
+        const switchToSignin = document.getElementById('switch-to-signin');
+
+        switchToSignup.addEventListener('click', function (e) {
+            e.preventDefault();
+            container.classList.add('active');
+        });
+
+        switchToSignin.addEventListener('click', function (e) {
+            e.preventDefault();
+            container.classList.remove('active');
+        });
+    </script>
+
+</body>
+
+</html>

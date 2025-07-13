@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ ChillBeat</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <div id="overlay"
+            class="z-3 position-fixed top-0 start-0 vw-100 vh-100 bg-light d-flex justify-content-center align-items-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <h2>♫</h2>
+                <h1>Chill</h1><span>Beat</span>
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="nav">
+                        <ul class="nav-list mb-0">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm yêu thích</a></li>
+                            <li><a href="#">Kết nối</a></li>
+                            <li><a href="rcm.html">Giới thiệu</a></li>
+                            <li>
+                                <input type="text" placeholder="Search..." class="input-search" id="search" />
+                            </li>
+                            <li><a href="javascript:void(0);" class="menu-label"
+                                    onclick="document.getElementById('overlay').classList.add('active')">Danh mục</a>
+                            </li>
+                            </li>
+                        </ul>
+                        <div class="overlay" id="overlay">
+                            <div class="category-box">
+                                <button class="close-btn"
+                                    onclick="document.getElementById('overlay').classList.remove('active')">✕</button>
+                                <div class="category-header">Danh mục sản phẩm</div>
+                                <div class="category-list">
+                                    <div class="category-item">
+                                        <img src="https://smartkoshk.com/cdn/shop/files/iPhone-16-Egypt-1.png?v=1726685746&width=1800"
+                                            alt="Điện thoại" />
+                                        <div>Điện thoại</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="https://t4.ftcdn.net/jpg/06/01/14/23/360_F_601142328_VnY6DMf1sC0RULodemaCSrvXSlFhO1lA.jpg"
+                                            alt="Laptop" />
+                                        <div>Laptop</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="https://nguyencongpc.vn/media/product/26728-khung-pc-1.jpg"
+                                            alt="PC Gaming" />
+                                        <div>PC Gaming</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="https://product.hstatic.net/200000420363/product/tai-nghe-rkx_46ecba7822eb413eb5c889d7ed92dc0b_1024x1024.jpg"
+                                            alt="Tai nghe" />
+                                        <div>Tai nghe</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409_FMT_WHH?wid=750&hei=556&fmt=jpeg&qlt=90&.v=1724041668836"
+                                            alt="Airpod" />
+                                        <div>Airpod</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/2023_8_9_638271929141470212_tivi-xiaomi-a-32-inch-dd.jpg"
+                                            alt="TV" />
+                                        <div>TV</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/00916608_quat_khong_canh_tich_hop_loc_khong_khi_fujihome_bf307dc_06628b13a4.png"
+                                            alt="Máy lọc không khí" />
+                                        <div>Máy lọc không khí</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <img src="https://cdn2.fptshop.com.vn/unsafe/750x0/filters:format(webp):quality(75)/2024_1_20_638413446319519002_loa-bluetooth-icore-m32-1.jpg"
+                                            alt="Loa Bluetooth" />
+                                        <div>Loa Bluetooth</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div onclick="location.href='/html/cart.html'" class="cart-icon" id="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                        <div class="dropdown">
+                            <div class="d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div id="name"></div>
+                                <img id="avatar" src="" alt="" />
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a id="logoutBtn" class="dropdown-item" href="javascript:void(0);">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <!-- Content -->
+    <div id="content">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active container-fluid text-center">
+                    <h2 class="content-h2" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Đại lý uỷ quyền chính
+                        thức của Apple Việt Nam (AAR)</h2>
+                    <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/H1_1440x242_fadfea9a58.png"
+                        class="slide-show w-100" alt="...">
+                </div>
+                <div class="carousel-item container-fluid text-center">
+                    <h2 class="content-h2" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Đại lý uỷ quyền chính
+                        thức của Apple Việt Nam (AAR)</h2>
+                    <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/H1_1440x242_58dd2b0e02.png"
+                        class="slide-show w-100" alt="...">
+                </div>
+                <div class="carousel-item container-fluid text-center">
+                    <h2 class="content-h2" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Đại lý uỷ quyền chính
+                        thức của Apple Việt Nam (AAR)</h2>
+                    <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/H1_1440x242_1_b8c37f1ca1.png"
+                        class="slide-show w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div id="container" class="bg-light">
+        <div class="container py-5">
+            <div class="product-wrapper">
+                <h1 class="mb-4 text-primary">HÈ LỚN - ƯU ĐÃI LỚN</h1>
+                <div class="row" id="products-list"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-light">
+        <div class="container py-5">
+            <div class="product-wrapper">
+                <h1 class="mb-4 text-primary">ĐIỆN THOẠI TỐT THÁNG 7</h1>
+                <div id="products-list-static" class="d-grid"
+                    style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/samsung_galaxy_z_fold6_thumb_3c94cadb15.png"
+                            class="product-image" alt="Macbook Air M4-A">
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy Z Fold6 5G</h3>
+                            <p class="product-price">29.900.000₫</p>
+                            <p class="product-sold">1.2k đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/samsung_galaxy_a06_5g_xanh_e7b690196f.png"
+                            class="product-image" alt="iPhone 16 Plus">
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy A06 5G 4GB 128GB</h3>
+                            <p class="product-price">21.990.000₫</p>
+                            <p class="product-sold">1.5k đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/samsung_galaxy_a56_hong_6_e43ed820e6.png"
+                            class="product-image" alt="AirPods 4">
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy A06 5G</h3>
+                            <p class="product-price">5.990.000₫</p>
+                            <p class="product-sold">850 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/xiaomi_15_ultra_bac_5_2d18398535.jpg"
+                            class="product-image" alt="OPPO Reno14">
+                        <div class="product-info">
+                            <h3 class="product-name">Xiaomi 15 Ultra 5G 16GB 512GB</h3>
+                            <p class="product-price">32.350.000 ₫</p>
+                            <p class="product-sold">430 đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/honor_x8c_xanh_5_b77db3097f.jpg"
+                            class="product-image" alt="iPad Pro M4">
+                        <div class="product-info">
+                            <h3 class="product-name">Honor X8c 8GB 512GB</h3>
+                            <p class="product-price">6.350.000 ₫</p>
+                            <p class="product-sold">320 đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/samsung_galaxy_a16_5g_xanh_0231fa3013.jpg"
+                            class="product-image" alt="TV Xiaomi 32">
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy A16 5G 8GB 128GB</h3>
+                            <p class="product-price">5.780.000 ₫</p>
+                            <p class="product-sold">700 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/honor_x9c_tim_5_0ac40e3956.png"
+                            class="product-image" alt="Tai nghe RKX">
+                        <div class="product-info">
+                            <h3 class="product-name">Honor X9c 5G 12GB 256GB</h3>
+                            <p class="product-price">8.610.000 ₫</p>
+                            <p class="product-sold">1.000 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/galaxy_s25_ultra_titan_silver_blue_1_8225f9e1f4.png"
+                            class="product-image" alt="PC Gaming">
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy S25 Ultra 5G 12GB 256GB</h3>
+                            <p class="product-price">28.780.000 ₫</p>
+                            <p class="product-sold">250 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/iphone_15_plus_80a37cdce5.png"
+                            class="product-image" alt="Loa Bluetooth iCore">
+                        <div class="product-info">
+                            <h3 class="product-name">Phone 15 Plus 128GB</h3>
+                            <p class="product-price">19.290.000 ₫</p>
+                            <p class="product-sold">1.800 đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/redmagic_pro_xam_2_d343a48452.png"
+                            class="product-image" alt="Quạt lọc khí">
+                        <div class="product-info">
+                            <h3 class="product-name">RedMagic 10 Pro 16GB 512GB</h3>
+                            <p class="product-price">21.990.000 ₫</p>
+                            <p class="product-sold">400 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <h2 class="mb-4 fw-bold">CHƯA BIẾT CHỌN GÌ - XEM REVIEW NGAY</h2>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="video-card">
+                    <div class="video-thumb ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/PfVp9SSOg0M" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <p class="desc">Schannel: Chị em dùng smartphone gì?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="video-card">
+                    <div class="video-thumb ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/5ykKSqnHz3g" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <p class="desc">Schannel: Richkid review iPhone 13 Pro Max</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="video-card">
+                    <div class="video-thumb ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/o6SCERTRs6A" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <p class="desc">Vinh Xô: Flagship yêu thích 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="video-card">
+                    <div class="video-thumb ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/6aDVvaR8uKY" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <p class="desc">Vinh Xô: Xiaomi đẻ nhiều quá!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light">
+        <div class="container py-5">
+            <div class="product-wrapper">
+                <h1 class="mb-4 text-primary">MÁY TÍNH VÀ ĐIỆN THOẠI TỐT THÁNG 7</h1>
+                <div id="products-list-static" class="d-grid"
+                    style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;">
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/macbook_air_15_m4_2025_xanh_1_09060cca6d.jpg"
+                            class="product-image" alt="Macbook Air M4-A">
+                        <div class="product-info">
+                            <h3 class="product-name">Macbook Air 15 M4 2025</h3>
+                            <p class="product-price">Macbook Air 15 M4 2025</p>
+                            <p class="product-sold">1.2k đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/Lenovo_Idea_Pad_Slim_3_15_IRH_10_1_af5950d78f.png"
+                            class="product-image" alt="iPhone 16 Plus">
+                        <div class="product-info">
+                            <h3 class="product-name">Laptop Lenovo IdeaPad Slim 3</h3>
+                            <p class="product-price">21.990.000₫</p>
+                            <p class="product-sold">1.5k đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/180x0/filters:format(webp):quality(75)/2023_10_12_638327196519727914_msi-gaming-gf63-12uc-den-2.jpg"
+                            class="product-image" alt="AirPods 4">
+                        <div class="product-info">
+                            <h3 class="product-name">Laptop MSI Gaming GF63 </h3>
+                            <p class="product-price">15.990.000 ₫</p>
+                            <p class="product-sold">850 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/750x0/filters:format(webp):quality(75)/asus_vivobook_x1504za_nj1039w_7459424b00.png"
+                            class="product-image" alt="OPPO Reno14">
+                        <div class="product-info">
+                            <h3 class="product-name">Laptop Asus Vivobook X1504ZA-NJ1039W i7</h3>
+                            <p class="product-price">13.990.000 ₫</p>
+                            <p class="product-sold">430 đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/750x0/filters:format(webp):quality(75)/acer_aspire_lite_16_al16_51p_32f7ef9aef.png"
+                            class="product-image" alt="iPad Pro M4">
+                        <div class="product-info">
+                            <h3 class="product-name">Laptop Acer Aspire Lite 16 </h3>
+                            <p class="product-price">15.290.000 ₫</p>
+                            <p class="product-sold">320 đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/samsung_galaxy_a16_5g_xanh_0231fa3013.jpg"
+                            class="product-image" alt="TV Xiaomi 32">
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy A16 5G 8GB 128GB</h3>
+                            <p class="product-price">5.780.000 ₫</p>
+                            <p class="product-sold">700 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/honor_x9c_tim_5_0ac40e3956.png"
+                            class="product-image" alt="Tai nghe RKX">
+                        <div class="product-info">
+                            <h3 class="product-name">Honor X9c 5G 12GB 256GB</h3>
+                            <p class="product-price">8.610.000 ₫</p>
+                            <p class="product-sold">1.000 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/galaxy_s25_ultra_titan_silver_blue_1_8225f9e1f4.png"
+                            class="product-image" alt="PC Gaming">
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy S25 Ultra 5G 12GB 256GB</h3>
+                            <p class="product-price">28.780.000 ₫</p>
+                            <p class="product-sold">250 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/iphone_15_plus_80a37cdce5.png"
+                            class="product-image" alt="Loa Bluetooth iCore">
+                        <div class="product-info">
+                            <h3 class="product-name">Phone 15 Plus 128GB</h3>
+                            <p class="product-price">19.290.000 ₫</p>
+                            <p class="product-sold">1.800 đã bán</p>
+                            <div class="product-rating">★★★★★</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="product-card">
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/redmagic_pro_xam_2_d343a48452.png"
+                            class="product-image" alt="Quạt lọc khí">
+                        <div class="product-info">
+                            <h3 class="product-name">RedMagic 10 Pro 16GB 512GB</h3>
+                            <p class="product-price">21.990.000 ₫</p>
+                            <p class="product-sold">400 đã bán</p>
+                            <div class="product-rating">★★★★☆</div>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="btn buy-btn"><i class="fa-solid fa-bolt"></i><span>Mua</span></button>
+                            <button class="btn cart-btn"><i class="fa-solid fa-cart-plus"></i><span>Thêm</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="chat-toggle-btn">...</button>
+    <div id="chat-popup">
+        <div id="chat-header">Chill Guys ( Bot thư giãn )</div>
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Ask me something ....">
+        <button id="send-btn">Gửi</button>
+    </div>
+    <!-- Footer -->
+    <!-- Top Bar -->
+    <section class="top-bar" aria-label="Thông tin giao hàng và dịch vụ">
+        <div class="top-bar-item" role="region" aria-labelledby="delivery-title">
+            <span class="material-icons" aria-hidden="true">local_shipping</span>
+            <div class="top-bar-content">
+                <div class="top-bar-title" id="delivery-title">GIAO HÀNG TẬN NƠI</div>
+                <div class="top-bar-desc">Miễn phí giao hàng nội thành</div>
+            </div>
+        </div>
+        <div class="top-bar-item" role="region" aria-labelledby="return-title">
+            <span class="material-icons" aria-hidden="true">autorenew</span>
+            <div class="top-bar-content">
+                <div class="top-bar-title" id="return-title">ĐỔI TRẢ DỄ DÀNG</div>
+                <div class="top-bar-desc">Miễn phí đổi trong 10 ngày</div>
+            </div>
+        </div>
+        <div class="top-bar-item" role="region" aria-labelledby="authentic-title">
+            <span class="material-icons" aria-hidden="true">thumb_up</span>
+            <div class="top-bar-content">
+                <div class="top-bar-title" id="authentic-title">HÀNG CHÍNH HÃNG</div>
+                <div class="top-bar-desc">Cam kết hàng chính hãng 100%</div>
+            </div>
+        </div>
+        <div class="top-bar-item" role="region" aria-labelledby="payment-title">
+            <span class="material-icons" aria-hidden="true">attach_money</span>
+            <div class="top-bar-content">
+                <div class="top-bar-title" id="payment-title">NHẬN HÀNG TRẢ TIỀN</div>
+                <div class="top-bar-desc">Tiền mặt, quẹt thẻ, chuyển khoản</div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>VỀ CHÚNG TÔI</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CHÍNH SÁCH</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li>Hotline: <a href="tel:19001234">1900 1234</a></li>
+                    <li>Email: <a href="mailto:hotro@chillbeat.vn">hotro@chillbeat.vn</a></li>
+                    <li>Địa chỉ: Số 888, đường Xuân Thủy, phường Cầu Giấy, Thanh phố Hà Nội</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>THEO DÕI CHÚNG TÔI</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 ChillBeat. All rights reserved.
+        </div>
+    </footer>
+
+
+    </ul>
+    </section>
+
+    </div>
+    </footer>
+    <script src="/js/chatbot.js"></script>
+    <!-- <script src="/js/cart.js" ></script> -->
+    <script src="/js/home.js"></script>
+    <script src="/js/firebase.js" defer type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+        integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

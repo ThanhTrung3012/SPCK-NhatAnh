@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reno14 Series 5G -  Sản phẩm</title>
+    <link rel="stylesheet" href="/css/dt.css" class="css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <h2>♫</h2>
+            <h1>Chill</h1><span>Beat</span>
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="nav">
+                    <ul class="nav-list mb-0">
+                        <li><a href="home.html">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm yêu thích</a></li>
+                        <li><a href="#">Kết nối</a></li>
+                        <li><a href="rcm.html">Giới thiệu</a></li>
+                        <li>
+                            <input type="text" placeholder="Search..." class="input-search" id="search" />
+                        </li>
+                        <li><a href="javascript:void(0);" class="menu-label"
+                                onclick="document.getElementById('overlay').classList.add('active')">Danh mục</a></li>
+                    </ul>
+
+                    <!-- Overlay -->
+                    <div class="overlay" id="overlay">
+                        <div class="category-box">
+                            <button class="close-btn"
+                                onclick="document.getElementById('overlay').classList.remove('active')">✕</button>
+                            <div class="category-header">Danh mục sản phẩm</div>
+                            <div class="category-list">
+                                <div class="category-item">
+                                    <img src="https://smartkoshk.com/cdn/shop/files/iPhone-16-Egypt-1.png"
+                                        alt="Điện thoại" />
+                                    <div>Điện thoại</div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="https://t4.ftcdn.net/jpg/06/01/14/23/360_F_601142328_VnY6DMf1sC0RULodemaCSrvXSlFhO1lA.jpg"
+                                        alt="Laptop" />
+                                    <div>Laptop</div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="https://nguyencongpc.vn/media/product/26728-khung-pc-1.jpg"
+                                        alt="PC Gaming" />
+                                    <div>PC Gaming</div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="https://product.hstatic.net/200000420363/product/tai-nghe-rkx_1024x1024.jpg"
+                                        alt="Tai nghe" />
+                                    <div>Tai nghe</div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="https://store.storeimages.cdn-apple.com/.../airpods-pro-2-hero.jpg"
+                                        alt="Airpod" />
+                                    <div>Airpod</div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="https://cdn2.fptshop.com.vn/.../tivi-xiaomi.jpg" alt="TV" />
+                                    <div>TV</div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="https://cdn2.fptshop.com.vn/.../quat-khong-canh.png"
+                                        alt="Máy lọc không khí" />
+                                    <div>Máy lọc không khí</div>
+                                </div>
+                                <div class="category-item">
+                                    <img src="https://cdn2.fptshop.com.vn/.../loa-bluetooth.jpg" alt="Loa Bluetooth" />
+                                    <div>Loa Bluetooth</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="location.href='/html/cart.html'" class="cart-icon" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="promo-container">
+        <div class="promo-left">
+            <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/section1_img_D_1_e0ef0d53ad.png"
+                alt="OPPO Reno14" />
+        </div>
+        <div class="promo-right">
+            <div class="tag">OPPO AI Phone</div>
+            <h1>Reno14 Series 5G</h1>
+            <h2>Chuyên Gia Chân Dung AI</h2>
+
+            <div class="bonus-section">
+                <div>Quà tặng đến <strong style="color:#d32f2f; font-size:18px">4.500.000₫</strong> từ 01 - 11.07</div>
+            </div>
+
+            <div class="promo-box">
+                <div class="promo-item">
+                    <strong>2 Triệu</strong>
+                    Thu cũ đổi mới đến
+                </div>
+                <div class="promo-item">
+                    <strong>24 Tháng</strong>
+                    Bảo hành
+                </div>
+                <div class="promo-item">
+                    <strong>0%</strong>
+                    14 tháng Trả góp
+                </div>
+                <div class="promo-item">
+                    <strong>12 Tháng</strong>
+                    Bảo hiểm màn hình
+                </div>
+            </div>
+
+            <div class="price">Giá từ 10.490.000₫</div>
+
+            <div class="buttons">
+                <button class="btn-red" onclick="buyNow(99, 'OPPO Reno14', 10490000)">MUA NGAY</button>
+                <button class="btn-black" onclick="addToCart(99, 'OPPO Reno14', 10490000)">TRẢ GÓP 0%</button>
+            </div>
+
+            <div class="product-footer">
+                Có 458 khách đặt hàng. <a href="#">Xem chi tiết</a>
+            </div>
+        </div>
+    </div>
+    <section class="oppo-specs-section">
+        <div class="oppo-specs-container">
+            
+            <div class="oppo-specs-content">
+                <div class="oppo-chip">THÔNG SỐ KĨ THUẬT</div>
+                <h2 class="oppo-model">Reno14 Series 5G</h2>
+                <p class="oppo-tagline">Chuyên Gia Chân Dung AI</p>
+                <p class="oppo-bonus">Dưới đây là thông số <span class="red">Reno14 Series 5G</span> từ phía OPPO</p>
+
+                
+                <div class="oppo-spec-box">
+                    <div><strong>Dimensity 7050</strong><br />Hiệu năng mạnh mẽ</div>
+                    <div><strong>6.7” AMOLED</strong><br />Tần số quét 120Hz</div>
+                    <div><strong>5000mAh</strong><br />Sạc SUPERVOOC 67W</div>
+                    <div><strong>Camera 50MP</strong><br />Chân dung AI đỉnh cao</div>
+                </div>
+
+                <div class="oppo-price-text">Giá từ <strong>10.490.000đ</strong></div>
+
+                
+                <div class="oppo-actions">
+                    <button class="btn-blue">Ảnh chân dung AI</button>
+                    <button class="btn-black">Hiệu suất tối ưu</button>
+                </div>
+            </div>
+            <div class="oppo-specs-image">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/339177/oppo-reno14-f-5g-blue-thumb-600x600.jpg"
+                    alt="Oppo promo" />
+                <div class="price-sticker">Giá từ<br /><strong>10.300.000đ</strong></div>
+            </div>
+        </div>
+    </section>
+    <section class="oppo-ai-section">
+        <div class="oppo-ai-wrapper">
+            <div class="oppo-ai-image">
+                <img src="https://www.oppo.com/content/dam/oppo/product-asset-library/reno/reno14-series/en/reno14/white-green/v1/assets/images-gaming-antenna-img1-1-95.png.webp"
+                    alt="Oppo Phone" />
+            </div>
+            <div class="oppo-ai-content">
+                <h2 class="oppo-ai-title">Tăng Tốc Mọi Trận Đấu</h2>
+                <p class="oppo-ai-desc">
+                    Không còn tình trạng thoát game đột ngột giữa những trận đấu đồng đội căng thẳng.
+                    <strong>Công nghệ Tăng Cường Kết Nối AI 3.0</strong> với ăng-ten vòng 360 độ và công nghệ chuyển đổi
+                    ăng-ten
+                    thích ứng AI sẽ tìm và khóa tín hiệu mạnh nhất — nhanh hơn, thông minh hơn và mượt mà hơn — đảm bảo
+                    kết nối luôn ổn định trong trận chiến.
+                </p>
+            </div>
+        </div>
+
+        <div class="oppo-ai-features">
+            <div class="oppo-feature">
+                <div class="feature-front">
+                    Kết Nối AI Tăng Cường Cho Trận Game Nhóm
+                </div>
+                <div class="feature-overlay">
+                    <h4>Kết Nối AI Tăng Cường</h4>
+                    <p>
+                        Giữ tín hiệu mạnh trong các trận game nhóm, giảm tình trạng lag giật hay rớt mạng giữa trận
+                        chiến.
+                    </p>
+                </div>
+            </div>
+
+            <div class="oppo-feature">
+                <div class="feature-front">
+                    Bộ Chuyển Mạng Di Động AI
+                </div>
+                <div class="feature-overlay">
+                    <h4>Chuyển Mạng AI</h4>
+                    <p>
+                        Tự động chuyển đổi linh hoạt giữa các mạng di động mạnh nhất, giúp tiết kiệm pin và giữ kết nối
+                        ổn định.
+                    </p>
+                </div>
+            </div>
+
+            <div class="oppo-feature">
+                <div class="feature-front">
+                    Siêu Kết Nối Wifi AI
+                </div>
+                <div class="feature-overlay">
+                    <h4>Wifi AI Thông Minh</h4>
+                    <p>
+                        Ưu tiên mạng Wifi mạnh nhất với AI, đảm bảo tốc độ cao, ổn định, không gián đoạn trong mọi tác
+                        vụ.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>VỀ CHÚNG TÔI</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CHÍNH SÁCH</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>LIÊN HỆ</h3>
+                <ul>
+                    <li>Hotline: <a href="tel:19001234">1900 1234</a></li>
+                    <li>Email: <a href="mailto:hotro@chillbeat.vn">hotro@chillbeat.vn</a></li>
+                    <li>Địa chỉ: Số 888, đường Xuân Thủy, phường Cầu Giấy, Thanh phố Hà Nội</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>THEO DÕI CHÚNG TÔI</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 ChillBeat. All rights reserved.
+        </div>
+    </footer>
+</body>
+<script src="/js/detail.js"></script>
+
+</html>
