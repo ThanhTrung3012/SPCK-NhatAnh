@@ -221,17 +221,17 @@ body {
   opacity: 1;
 }
 
-#container .sign-in {
+#container1 .sign-in {
   z-index: 2;
   opacity: 1;
 }
 
-#container.active .sign-in {
+#container1.active .sign-in {
   opacity: 0;
   z-index: 1;
 }
 
-#container.active .sign-up {
+#container1.active .sign-up {
   opacity: 1;
   z-index: 2;
 }
