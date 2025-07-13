@@ -41,7 +41,7 @@ if (loginGG) {
 
     if (user) {
       // Nếu đang ở trang login mà đã đăng nhập → chuyển sang home
-      if (currentPath === "/html/index.html") {
+      if (currentPath === "index.html") {
         window.location.href = "/html/home.html";
       } else {
         // Đã đăng nhập, hiển thị thông tin người dùng
@@ -77,8 +77,8 @@ if (loginGG) {
       }
     } else {
       // Nếu đang KHÔNG ở login.html → redirect về login
-      if (currentPath !== "/html/index.html") {
-        window.location.href = "/html/index.html";
+      if (currentPath !== "index.html") {
+        window.location.href = "index.html";
       }
     }
   });
@@ -87,7 +87,7 @@ if (loginGG) {
     logoutBtn.addEventListener("click", function () {
       signOut(auth)
         .then(() => {
-          window.location.href = "/html/index.html";
+          window.location.href = "index.html";
         })
         .catch((error) => {
           console.log(error);
